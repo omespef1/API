@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://cerezo/seven/webservicesophelia/WWfRflup.asmx?wsdl" docRef="http://cerezo/seven/webservicesophelia/WWfRflup.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://cerezo/seven/webservicesophelia/WWfRflup.asmx" xmlns:q1="http://seven/" binding="q1:SWFRFLUPSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://cerezo/seven/webservicesophelia/WWfRflup.asmx" xmlns:q2="http://seven/" binding="q2:SWFRFLUPSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

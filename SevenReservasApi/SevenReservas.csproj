@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92DF83A1-2CAF-4139-A214-BEA119937658}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SevenReservas</RootNamespace>
+    <AssemblyName>SevenReservas</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ophelia, Version=4.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>T:\LibsNET\Ophelia.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenFramework">
+      <HintPath>..\..\..\..\..\..\omarp dlls\SevenFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DwOXml\OBOConfig.xml" />
+    <Content Include="DwOXml\OCEConfig.xml" />
+    <Content Include="DwOXml\ODBConfig.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Global.asax" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\NogalApi.pubxml" />
+    <None Include="Properties\PublishProfiles\Roldan.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\WWfRflup\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\WWfRflup\TSalida1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\WWfRflup\WWfRflup.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="BO\BOAeOsApp.cs" />
+    <Compile Include="BO\BOGnArbol.cs" />
+    <Compile Include="BO\BOGnDigfl.cs" />
+    <Compile Include="BO\BOGnEmpre.cs" />
+    <Compile Include="BO\BOGnItems.cs" />
+    <Compile Include="BO\BOEcEvent.cs" />
+    <Compile Include="BO\BOInvitados.cs" />
+    <Compile Include="BO\BOPqInpqr.cs" />
+    <Compile Include="BO\BOConsumos.cs" />
+    <Compile Include="BO\BOptvta.cs" />
+    <Compile Include="BO\BOReserva.cs" />
+    <Compile Include="BO\BOAgenda.cs" />
+    <Compile Include="BO\BOProducto.cs" />
+    <Compile Include="BO\BOAeEspac.cs" />
+    <Compile Include="BO\BOAeClase.cs" />
+    <Compile Include="BO\BOGnTerce.cs" />
+    <Compile Include="BO\BOSoSocio.cs" />
+    <Compile Include="BO\BOWfRflup.cs" />
+    <Compile Include="BO\EnviarCorreo.cs" />
+    <Compile Include="Controllers\AeOsAppController.cs" />
+    <Compile Include="Controllers\GnArbolController.cs" />
+    <Compile Include="Controllers\EcEventController.cs" />
+    <Compile Include="Controllers\GnDigflController.cs" />
+    <Compile Include="Controllers\GnEmpreController.cs" />
+    <Compile Include="Controllers\InvitadosController.cs" />
+    <Compile Include="Controllers\PqInpqrController.cs" />
+    <Compile Include="Controllers\ConsumosController.cs" />
+    <Compile Include="Controllers\ptvtaController.cs" />
+    <Compile Include="Controllers\ReservaController.cs" />
+    <Compile Include="Controllers\AgendaController.cs" />
+    <Compile Include="Controllers\ProductoListaController.cs" />
+    <Compile Include="Controllers\AeClaseController.cs" />
+    <Compile Include="Controllers\GnItemsController.cs" />
+    <Compile Include="Controllers\SoRsociController.cs" />
+    <Compile Include="Controllers\AeEspacController.cs" />
+    <Compile Include="Controllers\GnTerceController.cs" />
+    <Compile Include="Controllers\SoSocipController.cs" />
+    <Compile Include="Controllers\SoSocioController.cs" />
+    <Compile Include="DAO\DAOAeOsApp.cs" />
+    <Compile Include="DAO\DAOConsumos.cs" />
+    <Compile Include="DAO\DAOGnArbol.cs" />
+    <Compile Include="DAO\DAOGnDigfl.cs" />
+    <Compile Include="DAO\DAOGnEmpre.cs" />
+    <Compile Include="DAO\DAOInvitados.cs" />
+    <Compile Include="DAO\DAOPqDinpq.cs" />
+    <Compile Include="DAO\DAOEcEvent.cs" />
+    <Compile Include="DAO\DAOPqInpqr.cs" />
+    <Compile Include="DAO\DAOGnItems.cs" />
+    <Compile Include="DAO\DAOptvta.cs" />
+    <Compile Include="DAO\DAOReserva.cs" />
+    <Compile Include="DAO\DAOAgenda.cs" />
+    <Compile Include="DAO\DAOProducto.cs" />
+    <Compile Include="DAO\DAOAeEspac.cs" />
+    <Compile Include="DAO\DAOAeClase.cs" />
+    <Compile Include="DAO\DAOGnTerce.cs" />
+    <Compile Include="DAO\DAOSoSocio.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Booking.cs" />
+    <Compile Include="Models\GnDigfl.cs" />
+    <Compile Include="Models\Mesa.cs" />
+    <Compile Include="Models\PTVTA.cs" />
+    <Compile Include="Models\pv_messl.cs" />
+    <Compile Include="Models\sp_mesas.cs" />
+    <Compile Include="Models\sp_turno.cs" />
+    <Compile Include="Models\TOAeOsApp.cs" />
+    <Compile Include="Models\TOConsumos.cs" />
+    <Compile Include="Models\TOAeClase.cs" />
+    <Compile Include="Models\TOAeEspac.cs" />
+    <Compile Include="Models\TODayDisponiblity.cs" />
+    <Compile Include="Models\TODisponible.cs" />
+    <Compile Include="Models\TOEcEvent.cs" />
+    <Compile Include="Models\TOGnArbol.cs" />
+    <Compile Include="Models\TOGnEmpre.cs" />
+    <Compile Include="Models\TOGnItems.cs" />
+    <Compile Include="Models\TOInfReser.cs" />
+    <Compile Include="Models\TOMonthDisponibility.cs" />
+    <Compile Include="Models\TONoDisponible.cs" />
+    <Compile Include="Models\TOOcupado.cs" />
+    <Compile Include="Models\TOPqDinpq.cs" />
+    <Compile Include="Models\TOPqInpqr.cs" />
+    <Compile Include="Models\TOProducto.cs" />
+    <Compile Include="Models\TOSoRsoci.cs" />
+    <Compile Include="Models\TOGnTerce.cs" />
+    <Compile Include="Models\TOSoSocio.cs" />
+    <Compile Include="Models\TOSource.cs" />
+    <Compile Include="Models\TOTransaction.cs" />
+    <Compile Include="Models\TSalida.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Tipos.cs" />
+    <Compile Include="Web References\WWfRflup\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Demo.pubxml" />
+    <None Include="Web References\WWfRflup\WWfRflup.wsdl" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BackEndReservas\BackEndReservas.csproj">
+      <Project>{5c8a78f2-e45d-41c4-84f5-7af87300dfc2}</Project>
+      <Name>BackEndReservas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComInvitados\ComInvitados.csproj">
+      <Project>{1ba8686f-187c-47a2-ad40-c4db8da48b83}</Project>
+      <Name>ComInvitados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComReservas\ComReservas.csproj">
+      <Project>{b0c1bbc9-8337-4875-a4e8-598eeea61cf4}</Project>
+      <Name>ComReservas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTOEntities\DTOEntities.csproj">
+      <Project>{57b37d8f-74f4-4ea6-b521-6cd7faa743e4}</Project>
+      <Name>DTOEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://cerezo/seven/webservicesophelia/WWfRflup.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WWfRflup\</RelPath>
+      <UpdateFromURL>http://cerezo/seven/webservicesophelia/WWfRflup.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NogalApi_WWfRflup_SWFRFLUP</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SPqInpqr">
+      <Guid>{3A625DEB-C853-498A-AA02-312B29F5BFD9}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SSoIngre">
+      <Guid>{9A08E588-5564-48D8-95B4-303D049AEC08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DRoldan|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DRoldan|x86'">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4835</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SevenReservasApi</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

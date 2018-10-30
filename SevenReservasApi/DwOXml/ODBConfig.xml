@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Parametros xmlns:xlink="http://www.w3.org/1999/xlink">
+  <Parametro>
+    <!--<connectionString>Server=testings;User ID=testing;Password=S11stemas15;Database=testing;App=sevenReservas;</connectionString>-->
+    <connectionString>Server=cerezo;User ID=Desarrollo;Password=Desarrollo2018;Database=SevenDesarrollo;App=sevenReservas;</connectionString>
+    <providerName>SQL</providerName>
+  </Parametro>
+</Parametros>
